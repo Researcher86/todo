@@ -24,8 +24,8 @@ kv:
         driver: memory
         config:
             interval: 60
-jobs:
-    pool:
-        num_workers: 2
-        max_worker_memory: 100
-    consume: {  }
+#jobs:
+#    pool:
+#        num_workers: 2
+#        max_worker_memory: 100
+#    consume: {  }

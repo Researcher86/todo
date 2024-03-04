@@ -15,6 +15,7 @@ use Spiral\Events\Bootloader\EventsBootloader;
 use Spiral\League\Event\Bootloader\EventBootloader;
 use Spiral\Monolog\Bootloader\MonologBootloader;
 use Spiral\Nyholm\Bootloader\NyholmBootloader;
+use Spiral\Profiler\ProfilerBootloader;
 use Spiral\Prototype\Bootloader\PrototypeBootloader;
 use Spiral\Queue\Bootloader\QueueBootloader;
 use Spiral\RoadRunnerBridge\Bootloader as RoadRunnerBridge;
@@ -122,6 +123,8 @@ class Kernel extends \Spiral\Framework\Kernel
 
             // Configure route groups, middleware for route groups
             Bootloader\RoutesBootloader::class,
+
+            ProfilerBootloader::class,
         ];
     }
 

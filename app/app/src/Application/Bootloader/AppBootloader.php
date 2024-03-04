@@ -8,6 +8,7 @@ use Spiral\Bootloader\DomainBootloader;
 use Spiral\Core\CoreInterface;
 use Spiral\Cycle\Interceptor\CycleInterceptor;
 use Spiral\Domain\GuardInterceptor;
+use Spiral\Profiler\ProfilerInterceptor;
 
 /**
  * @link https://spiral.dev/docs/http-interceptors
@@ -19,5 +20,6 @@ final class AppBootloader extends DomainBootloader
     protected const INTERCEPTORS = [
         CycleInterceptor::class,
         GuardInterceptor::class,
+        ProfilerInterceptor::class,
     ];
 }

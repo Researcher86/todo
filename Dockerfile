@@ -15,7 +15,8 @@ RUN \
     printf "\n" | pecl install amqp && \
     printf "\n" | pecl install apcu && \
     printf "\n" | pecl install xdebug && \
-    docker-php-ext-enable redis amqp xdebug
+    printf "\n" | pecl install xhprof && \
+    docker-php-ext-enable redis amqp xdebug xhprof
 
 # Install compoer
 RUN curl -sS https://getcomposer.org/installer | php -- -- && mv composer.phar /usr/local/bin/composer

@@ -14,6 +14,7 @@ use Spiral\Debug\StateCollector\HttpCollector;
 use Spiral\Filter\ValidationHandlerMiddleware;
 use Spiral\Http\Middleware\ErrorHandlerMiddleware;
 use Spiral\Http\Middleware\JsonPayloadMiddleware;
+use Spiral\Profiler\ProfilerMiddleware;
 use Spiral\Router\Bootloader\AnnotatedRoutesBootloader;
 use Spiral\Router\Loader\Configurator\RoutingConfigurator;
 use Spiral\Session\Middleware\SessionMiddleware;
@@ -34,6 +35,7 @@ final class RoutesBootloader extends BaseRoutesBootloader
             DumperMiddleware::class,
             JsonPayloadMiddleware::class,
             HttpCollector::class,
+//            ProfilerMiddleware::class,
         ];
     }
 

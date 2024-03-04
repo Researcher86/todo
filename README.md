@@ -277,3 +277,14 @@ Alternatively, you can create an issue on GitHub to report a bug or request a fe
 
 We welcome any feedback or suggestions you may have, and are always happy to help troubleshoot any issues you may
 encounter.
+
+### https://docs.buggregator.dev/config/xhprof.html
+При необходимости переключайте Xhprof в файле среды, но не забывайте отключать его, когда он не используется, чтобы избежать влияния на производительность
+
+XHPROF_ENABLED=true
+В качестве альтернативы вы можете включить X-Xhprof-Enabled заголовок в свой запрос, чтобы явно включить или отключить профилирование для этого конкретного вызова. Когда этот заголовок присутствует, он имеет приоритет над переменной среды.
+
+Разрешенные значения: true 1 on yes
+Отключенные значения: false 0 off no
+
+Эта функция отлично работает с расширением для браузера, таким как ModHeader. Она позволяет включать и выключать профилирование прямо из вашего браузера.
