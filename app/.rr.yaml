@@ -12,6 +12,7 @@ http:
             - .php
             - .htaccess
     pool:
+#        num_workers: 10
         num_workers: 1
         debug: true
         supervisor:

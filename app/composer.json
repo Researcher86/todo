@@ -26,6 +26,8 @@
         "spiral-packages/scheduler": "^2.1"
     },
     "require-dev": {
+        "pestphp/pest": "^2.34",
+        "pestphp/pest-plugin-stressless": "^2.2",
         "spiral/dumper": "^3.2.1",
         "spiral/profiler": "^3.0",
         "spiral/testing": "^2.3",
@@ -47,7 +49,8 @@
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            "spiral/composer-publish-plugin": true
+            "spiral/composer-publish-plugin": true,
+            "pestphp/pest-plugin": true
         }
     },
     "scripts": {
