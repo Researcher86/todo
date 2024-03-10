@@ -59,7 +59,7 @@ services:
             - todo
 
     nodejs:
-        image: node:21.6.2
+        image: node:21.6.2-alpine
 #        tty: true
         working_dir: /app
         volumes:
